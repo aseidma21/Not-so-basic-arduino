@@ -23,5 +23,5 @@ What I learned: It's okay to use code from other people and modify it to your us
 CODE: https://github.com/aseidma21/Not-so-basic-arduino/blob/master/NewPing/NewPing.ino
 
 FRITZING-
-https://raw.githubusercontent.com/vcraghe32/Intermediate_Arduino/master/Images/newpingwiring.JPG
+
 Credit: Violet C-W CHS sigma wiki
