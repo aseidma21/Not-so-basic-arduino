@@ -24,4 +24,4 @@ CODE: https://github.com/aseidma21/Not-so-basic-arduino/blob/master/NewPing/NewP
 
 FRITZING-
 
-Credit: Violet C-W CHS sigma wiki
+
