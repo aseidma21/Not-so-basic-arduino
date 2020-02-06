@@ -11,6 +11,9 @@ What I learned: I learned to remember to use the line Serial.println so that I k
 CODE:https://github.com/aseidma21/Not-so-basic-arduino/blob/master/Hello%20Functions/Hello%20Functions.ino
 
 FRITZING-
+![Hello functions fritzing](https://github.com/vcraghe32/Intermediate_Arduino/raw/master/Images/hellofunctionswiring.JPG)
+
+Credit: Dylan S.
 
 ## New Ping
 
@@ -22,6 +25,9 @@ What I learned: It's okay to use code from other people and modify it to your us
 
 CODE: https://github.com/aseidma21/Not-so-basic-arduino/blob/master/NewPing/NewPing.ino
 
-FRITZING-
+FRITZING- 
+![New ping fritzing](https://github.com/vcraghe32/Intermediate_Arduino/raw/master/Images/newpingwiring.JPG)
+
+Credit: Violet C-W
 
 
