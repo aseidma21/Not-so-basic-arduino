@@ -5,7 +5,7 @@ Assignments: Hello Functions, New Ping
 
 What it does:Uses functions to move a servo via ultrasonic sensor
 
-Struggles: It was my first time coding with an ultrasonic sensor, so I did really understand how to. Also it was hard to understand the functions at first
+Struggles: It was my first time coding with an ultrasonic sensor, so I didn't really understand how to. Also it was hard to understand the functions at first
 
 What I learned: I learned to remember to use the line Serial.println so that I know what's happening or why it's not working
 
