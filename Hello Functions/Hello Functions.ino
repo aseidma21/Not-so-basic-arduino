@@ -14,19 +14,19 @@ void setup()
 
 void loop()
 {
-	Serial.print("distance:");
-	Serial.println(distance);
-	getDistance();
-	myservo.write(78);
-	if (distance <= 10)
+	Serial.print("distance:"); //prints the word "distance" to the serial monitor
+	Serial.println(distance); //prints distance value returning from sensor
+	getDistance(); // gets value returning from sensor
+	myservo.write(78); //moves servo to what looks like 0 with the actual servo
+	if (distance <= 10) // if distance returning from sensor is less than or equal to 10..
 	{
-		myservo.write(180);
-		delay(10);
+		myservo.write(180); //move servo 180 degrees
+		delay(10); // and delay 10 milliseconds
 	}
 	
 }
 
-int getDistance()
+int getDistance() //codes for above use of getDistance function which gets data from the ultrasonic sensor
 {
 	digitalWrite(trigPin, LOW);
 	delayMicroseconds(2);
