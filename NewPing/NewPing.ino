@@ -1,36 +1,27 @@
+//Note: This code is to print distance every time a button is pressed
 #include <NewPing.h>
+ 
+#define TRIGGER_PIN 12
+#define ECHO_PIN 11
+#define MAX_DISTANCE 1000
+ 
+NewPing myHC_SR04(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+ 
+void setup() {
+ Serial.begin(9600);
+ pinMode(ECHO_PIN, INPUT);
+ pinMode(TRIGGER_PIN, OUTPUT);
+ pinMode(2, OUTPUT);
 
-#include <Servo.h>
-const int trigPin = 10;
-const int echoPin = 9;
-int duration;
-int distance;
-int button = 2;
-void setup()
-{
-	pinMode(echoPin, INPUT);
-	pinMode(trigPin, OUTPUT);
-	Serial.begin(9600);
-}
 
-void loop()
-{
-	getDistance();
-	if (digitalRead(button) == HIGH)
-	{
-		Serial.print("distance:");
-		Serial.println(distance);
-	}
 }
+ 
+void loop() {
+     if(digitalRead(2) == 1) {
+     	Serial.println(myHC_SR04.ping_cm());
+     	delay(500);
+     }
 
-int getDistance()
-{
-	digitalWrite(trigPin, LOW);
-	delayMicroseconds(2);
-	digitalWrite(trigPin, HIGH);
-	delayMicroseconds(10);
-	digitalWrite(trigPin, LOW);
-	duration = pulseIn(echoPin, HIGH);
-	distance = duration * (0.034) /2;
-	return distance;
-}
+}   
+
+
